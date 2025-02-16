@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón de Rosas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="roseButton">💖FELIZ DIA MY LOVE🥰</button>
+        <div id="roseContainer" class="hidden">
+           <h2>🔥FELIZ DIA DE SAN VALENTIN😍</h2>
+            <h1>❤️Mis días son mejores contigo✨</h1>
+            <img src="pin.gif" alt="Ramo de Rosas Rojas" >
+            <audio autoplay loop src="mi.mp3"></audio>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('roseButton').addEventListener('click', function() {
+            var roseContainer = document.getElementById('roseContainer');
+            var roseButton = document.getElementById('roseButton');
+            
+            // Mostrar el contenedor de rosas y ocultar el botón
+            roseContainer.classList.remove('hidden');
+            roseButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
